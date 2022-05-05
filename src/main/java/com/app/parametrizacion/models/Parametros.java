@@ -48,6 +48,7 @@ public class Parametros {
 	private String tituloMapa;
 	private List<String> ubicacionMuro;
 	private List<Integer> labelMuros;
+	private String terminosYCondiciones;
 
 	public Parametros() {
 	}
@@ -60,7 +61,7 @@ public class Parametros {
 			List<String> chipsWrapWidgets, String tituloHomePage, String textoContenidoHomePage,
 			List<String> iconosMenuHomePage, List<Double> colorBotonesHomePage, List<Double> colorNavegacionHomePage,
 			List<String> iconosNavegacionHomePage, List<String> destinoNavHomePage, String tituloMapa,
-			List<String> ubicacionMuro, List<Integer> labelMuros) {
+			List<String> ubicacionMuro, List<Integer> labelMuros, String terminosYCondiciones) {
 		super();
 		this.username = username;
 		this.colorPrimario = colorPrimario;
@@ -91,6 +92,7 @@ public class Parametros {
 		this.tituloMapa = tituloMapa;
 		this.ubicacionMuro = ubicacionMuro;
 		this.labelMuros = labelMuros;
+		this.terminosYCondiciones = terminosYCondiciones;
 	}
 
 	public String getId() {
@@ -331,6 +333,14 @@ public class Parametros {
 
 	public void setLabelMuros(List<Integer> labelMuros) {
 		this.labelMuros = labelMuros;
+	}
+
+	public String getTerminosYCondiciones() {
+		return terminosYCondiciones;
+	}
+
+	public void setTerminosYCondiciones(String terminosYCondiciones) {
+		this.terminosYCondiciones = terminosYCondiciones;
 	}
 
 }

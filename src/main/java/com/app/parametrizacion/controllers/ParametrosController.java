@@ -150,6 +150,22 @@ public class ParametrosController {
 		param.setImagenes(parametro.getImagenes());
 		return parametros.save(param);
 	}
+	
+	@PutMapping("/parametros/terminosycondiciones/editar/")
+	@ResponseStatus(code = HttpStatus.OK)
+	public Parametros editarTerminosYCondiciones(@RequestParam("tyc") String tyc) {
+		Parametros param = parametros.findByUsername("parameters");
+		param.setTerminosYCondiciones(tyc);
+		return parametros.save(param);
+	}
+	
+	@GetMapping("/parametros/terminosycondiciones/obtener/")
+	@ResponseStatus(code = HttpStatus.OK)
+	public String obtenerTerminosYCondiciones() {
+		Parametros param = parametros.findByUsername("parameters");
+		return param.getTerminosYCondiciones();
+	}
+	
 
 	@GetMapping("/parametros/get/representacionMuro")
 	@ResponseStatus(code = HttpStatus.OK)
