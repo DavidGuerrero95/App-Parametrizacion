@@ -1,9 +1,13 @@
+com\app\parametrizacion\models\Proyectos.class
 com\app\parametrizacion\models\ServiciosParametros.class
 com\app\parametrizacion\config\SwaggerConfiguration.class
 com\app\parametrizacion\models\Parametros.class
 com\app\parametrizacion\repository\ServiciosParametrosRepository.class
 com\app\parametrizacion\services\IServiciosService.class
 com\app\parametrizacion\services\ServiciosService.class
+com\app\parametrizacion\controllers\ParametrosController.class
+com\app\parametrizacion\repository\ParametrosFlutterRepository.class
+com\app\parametrizacion\clients\ProyectosFeignClient.class
+com\app\parametrizacion\models\ParametrosFlutter.class
 com\app\parametrizacion\repository\ParametrosRepository.class
 com\app\parametrizacion\AppParametrizacionApplication.class
-com\app\parametrizacion\controllers\ParametrosController.class

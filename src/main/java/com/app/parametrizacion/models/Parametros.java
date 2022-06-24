@@ -49,6 +49,7 @@ public class Parametros {
 	private List<String> ubicacionMuro;
 	private List<Integer> labelMuros;
 	private String terminosYCondiciones;
+	private List<Integer> codigoProyectos;
 
 	public Parametros() {
 	}
@@ -61,7 +62,8 @@ public class Parametros {
 			List<String> chipsWrapWidgets, String tituloHomePage, String textoContenidoHomePage,
 			List<String> iconosMenuHomePage, List<Double> colorBotonesHomePage, List<Double> colorNavegacionHomePage,
 			List<String> iconosNavegacionHomePage, List<String> destinoNavHomePage, String tituloMapa,
-			List<String> ubicacionMuro, List<Integer> labelMuros, String terminosYCondiciones) {
+			List<String> ubicacionMuro, List<Integer> labelMuros, String terminosYCondiciones,
+			List<Integer> codigoProyectos) {
 		super();
 		this.username = username;
 		this.colorPrimario = colorPrimario;
@@ -93,6 +95,7 @@ public class Parametros {
 		this.ubicacionMuro = ubicacionMuro;
 		this.labelMuros = labelMuros;
 		this.terminosYCondiciones = terminosYCondiciones;
+		this.codigoProyectos = codigoProyectos;
 	}
 
 	public String getId() {
@@ -341,6 +344,14 @@ public class Parametros {
 
 	public void setTerminosYCondiciones(String terminosYCondiciones) {
 		this.terminosYCondiciones = terminosYCondiciones;
+	}
+
+	public List<Integer> getCodigoProyectos() {
+		return codigoProyectos;
+	}
+
+	public void setCodigoProyectos(List<Integer> codigoProyectos) {
+		this.codigoProyectos = codigoProyectos;
 	}
 
 }
